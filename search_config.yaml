@@ -1,0 +1,35 @@
+linkedin:
+  - title: Software Engineer Healthcare
+    url: "https://www.linkedin.com/jobs/search/?currentJobId=4412882886&f_E=2%2C3%2C4&f_TPR=r604800&f_WT=3%2C1&keywords=Software%20Engineer%20healthcare&location=Z%C3%BCrich%2C%20Switzerland&origin=JOB_SEARCH_PAGE_JOB_FILTER"
+
+  - title: Medical Software Engineer
+    url: "https://www.linkedin.com/jobs/search/?currentJobId=4435805452&f_TPR=r604800&f_WT=1%2C3&keywords=Medical%20Software%20Engineer&location=Z%C3%BCrich%2C%20Switzerland&origin=JOB_SEARCH_PAGE_JOB_FILTER"
+
+  - title: Scientific Software Engineer
+    url: "https://www.linkedin.com/jobs/search/?currentJobId=4278050399&distance=25&f_E=3%2C4&f_JT=F%2CP%2CT&f_TPR=r2592000&f_WT=3%2C1&keywords=Scientific%20Software%20Engineer&location=Z%C3%BCrich%2C%20Switzerland&origin=JOB_SEARCH_PAGE_JOB_FILTER&sortBy=R"
+
+  - title: Python Medical Devices
+    url: "https://www.linkedin.com/jobs/search/?currentJobId=4435133681&distance=25&f_E=3%2C4&f_JT=F%2CP&f_TPR=r604800&f_WT=1%2C3&keywords=Python%20medical%20devices&location=Z%C3%BCrich%2C%20Switzerland&origin=JOB_SEARCH_PAGE_JOB_FILTER&sortBy=R"
+
+jobs_ch:
+  - title: Software Engineer
+    url: "https://www.jobs.ch/en/vacancies/?employment-grade-max=100&employment-grade-min=80&employment-type=1&employment-type=5&employment-type=6&language-skill=en&location=zurich&position=2&position=3&publication-date=7&term=software%20engineer"
+
+  - title: Medical Software
+    url: "https://www.jobs.ch/en/vacancies/?employment-grade-max=100&employment-grade-min=80&employment-type=1&employment-type=5&employment-type=6&language-skill=en&location=zurich&position=2&position=3&publication-date=7&term=medical%20software"
+
+  - title: Digital Health
+    url: "https://www.jobs.ch/en/vacancies/?employment-grade-max=100&employment-grade-min=80&employment-type=1&employment-type=5&employment-type=6&language-skill=en&location=zurich&position=2&position=3&publication-date=7&term=digital%20health"
+
+  - title: Medical Imaging
+    url: "https://www.jobs.ch/en/vacancies/?employment-grade-max=100&employment-grade-min=80&employment-type=1&employment-type=5&employment-type=6&language-skill=en&location=zurich&position=2&position=3&publication-date=7&term=medical%20imaging"
+
+indeed:
+  - title: Software Engineer Healthcare Zurich
+    url: "https://ch.indeed.com/jobs?q=Software+Engineer+healthcare&l=Z%C3%BCrich%2C+ZH&fromage=7&lang=en&radius=25&sc=0kf%3Aattr%286QC5F%7CEXSNN%252COR%29attr%28W22T3%29%3B&from=searchOnDesktopSerp&vjk=6923838c21d56e65"
+
+  - title: Medical Software Engineer Zurich
+    url: "https://ch.indeed.com/jobs?q=Medical+Software+Engineer&l=Z%C3%BCrich%2C+ZH&fromage=7&radius=25&sc=0kf%3Aattr%286QC5F%7CEXSNN%252COR%29attr%28CF3CP%7CW22T3%252COR%29%3B&from=searchOnDesktopSerp&vjk=67e676c3956d7e38"
+
+  - title: Scientific Software Engineer Zurich
+    url: "https://ch.indeed.com/jobs?q=Scientific+Software+Engineer&l=Z%C3%BCrich%2C+ZH&fromage=7&lang=en&radius=25&sc=0kf%3Aattr%286QC5F%7CEXSNN%252COR%29attr%28CF3CP%7CW22T3%252COR%29%3B&from=searchOnDesktopSerp&vjk=6923838c21d56e65"
