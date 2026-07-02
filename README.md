@@ -1,12 +1,12 @@
 # Job Radar
 
-A Python CLI application that streamlines the search for software engineering and AI roles in healthcare by organizing searches across multiple job platforms.
+A Python CLI application that streamlines the search for software engineering and AI roles in healthcare by automating searches across multiple job platforms.
 
-## Overview
+## Motivation
 
 This application streamlines job searches by launching predefined search queries across multiple job platforms.
-
-Searching for software engineering positions often requires repeating the same searches every day on LinkedIn, jobs.ch, Indeed, and company career pages. Job Radar automates this repetitive workflow while serving as a practical software engineering project to explore modern Python development, testing, CI/CD, and containerization.
+Searching for software engineering positions often requires repeating the same searches every day on different platforms (e.g. LinkedIn, jobs.ch, Indeed.ch, etc). 
+Job Radar automates this repetitive workflow while serving as a practical software engineering project to explore modern Python development, testing, CI/CD, and containerization.
 
 
 ## Features (v0.1)
@@ -19,16 +19,22 @@ Searching for software engineering positions often requires repeating the same s
 ## Project structure
 ```text
 job-radar/
-├── README.md
-├── LICENSE
-├── .gitignore
+│   .gitignore
+│   LICENSE
+│   project.toml
+│   README.md
+│
+├───src
+│       __init__.py.py
+│
+└───tests
 ```
 
 ## Roadmap
 
 ### v0.1
 
-- [ ] Project skeleton
+- [X] Project skeleton
 - [ ] YAML configuration
 - [ ] Browser launcher
 - [ ] CLI
