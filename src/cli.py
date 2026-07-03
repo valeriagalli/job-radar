@@ -1,0 +1,30 @@
+"""
+Command-line interface for Job Radar.
+"""
+import argparse
+
+from config import load_config
+from launcher import open_links
+
+
+def main() -> None:
+    """Parse command-line arguments and launch the selected searches."""
+    parser = argparse.ArgumentParser(
+    description="Open predefined job searches in your default web browser."
+    )
+    
+    parser.add_argument(
+        "section",
+        choices=["linkedin", "jobs_ch", "indeed", "all"],
+        help="Search platform to open",
+    )
+
+    args = parser.parse_args()
+
+    config = load_config()
+
+    open_links(config, args.section)
+
+
+if __name__ == "__main__":
+    main()
