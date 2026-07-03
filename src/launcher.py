@@ -13,15 +13,16 @@ def open_links(config: dict, section: str) -> None:
         if not links:
             print(f"No searches found for '{current_section}'.")
             continue
-
+        
+        print(f"\nOpening {current_section} searches:")
         for item in links:
-            name = item.get("name", "Unnamed search")
+            title = item.get("title", "Unnamed search")
             url = item.get("url")
 
             if url is None:
-                print(f"Skipping '{name}': missing URL.")
+                print(f"Skipping '{title}': missing URL.")
                 continue
 
-            print(f"- {name}")
+            print(f"- {title}")
             webbrowser.open_new_tab(url)
-        print(f"\nOpening {current_section}:")
+        

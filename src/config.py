@@ -4,8 +4,8 @@ Load and validate the application configuration from YAML files.
 from pathlib import Path
 import yaml
 
-
-CONFIG_PATH = Path("search_config.yaml")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+CONFIG_PATH = PROJECT_ROOT / "search_config.yaml"
 
 
 def load_config(path: Path= CONFIG_PATH) -> dict:
