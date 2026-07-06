@@ -9,6 +9,48 @@ Searching for software engineering positions often requires repeating the same s
 Job Radar automates this repetitive workflow while serving as a practical software engineering project to explore modern Python development, testing, CI/CD, and containerization.
 
 
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/<your_username>/job-radar.git
+cd job-radar
+```
+
+Install the dependencies in editable mode
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+Open LinkedIn searches
+
+```bash
+python src/job_radar/cli.py linkedin
+```
+
+Open jobs.ch searches
+
+```bash
+python src/job_radar/cli.py jobs_ch
+```
+
+Open Indeed searches
+
+```bash
+python src/job_radar/cli.py indeed
+```
+
+Open all searches
+
+```bash
+python src/job_radar/cli.py all
+```
+
+
 ## Features (v0.1)
 
 - Supports multiple job platforms (LinkedIn, jobs.ch, Indeed).
@@ -33,16 +75,28 @@ job-radar/
 ## Roadmap
 
 ### v0.1
+- [x] Project skeleton
+- [x] YAML configuration
+- [x] Modular architecture
+- [x] Browser launcher
+- [x] Command-line interface
 
-- [X] Project skeleton
-- [ ] YAML configuration
-- [ ] Browser launcher
-- [ ] CLI
+### v0.2
+- [ ] Unit tests
+- [ ] Logging
+- [ ] Ruff formatting
+
+### v0.3
+- [ ] Docker support
+- [ ] GitHub Actions
+
+### v1.0
+- [ ] Career page monitoring
+- [ ] Job scoring
 
 
 ## Status
 
 Under active development.
-Current milestone: v0.1 (MVP)
+Current milestone: v0.2 
 
-The current goal is to build a simple browser launcher driven by a YAML configuration file.
