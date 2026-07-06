@@ -3,8 +3,8 @@ Command-line interface for Job Radar.
 """
 import argparse
 
-from config import load_config
-from launcher import open_links
+from job_radar.config import load_config
+from job_radar.launcher import open_links
 
 
 def create_parser() -> argparse.ArgumentParser:
