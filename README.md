@@ -9,7 +9,9 @@ Searching for software engineering positions often requires repeating the same s
 Job Radar automates this repetitive workflow while serving as a practical software engineering project to explore modern Python development, testing, CI/CD, and containerization.
 
 
-## Installation
+## Installation (Windows)
+
+### PowerShell
 
 Clone the repository
 
@@ -18,10 +20,17 @@ git clone https://github.com/<your_username>/job-radar.git
 cd job-radar
 ```
 
-Install the dependencies in editable mode
+Create a virtual environment
 
-```bash
-pip install -e .
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Install the project
+
+```powershell
+pip install -e ".[dev]"
 ```
 
 ## Usage
@@ -60,16 +69,20 @@ python src/job_radar/cli.py all
 
 ## Project structure
 ```text
-job-radar/
 │   .gitignore
 │   LICENSE
 │   project.toml
 │   README.md
+│   search_config.yaml
 │
 ├───src
-│       __init__.py.py
+│   │   cli.py
+│   │   config.py
+│   │   launcher.py
+│   │   __init__.py.py
 │
 └───tests
+        test_cli.py
 ```
 
 ## Roadmap
