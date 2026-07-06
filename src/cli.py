@@ -7,18 +7,24 @@ from config import load_config
 from launcher import open_links
 
 
-def main() -> None:
-    """Parse command-line arguments and launch the selected searches."""
+def create_parser() -> argparse.ArgumentParser:
+    """Create and return the argument parser for the CLI."""
     parser = argparse.ArgumentParser(
-    description="Open predefined job searches in your default web browser."
+        description="Open predefined job searches in your default web browser."
     )
-    
+
     parser.add_argument(
         "section",
         choices=["linkedin", "jobs_ch", "indeed", "all"],
         help="Search platform to open",
     )
+    
+    return parser
 
+
+def main() -> None:
+    """Parse command-line arguments and launch the selected searches."""
+    parser = create_parser()
     args = parser.parse_args()
 
     config = load_config()
