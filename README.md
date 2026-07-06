@@ -95,7 +95,7 @@ python src/job_radar/cli.py all
 - [x] Command-line interface
 
 ### v0.2
-- [ ] Unit tests
+- [X] Unit tests
 - [ ] Logging
 - [ ] Ruff formatting
 
