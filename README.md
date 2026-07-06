@@ -69,20 +69,22 @@ python src/job_radar/cli.py all
 
 ## Project structure
 ```text
-│   .gitignore
-│   LICENSE
-│   project.toml
-│   README.md
-│   search_config.yaml
-│
-├───src
-│   │   cli.py
-│   │   config.py
-│   │   launcher.py
-│   │   __init__.py.py
-│
-└───tests
-        test_cli.py
+job-radar/
+├── src/
+│   └── job_radar/
+│       ├── __init__.py
+│       ├── cli.py
+│       ├── config.py
+│       └── launcher.py
+├── tests/
+│   ├── test_cli.py
+│   ├── test_config.py
+│   └── test_launcher.py
+├── .gitignore
+├── LICENSE
+├── pyproject.toml
+├── README.md
+└── search_config.yaml
 ```
 
 ## Roadmap
