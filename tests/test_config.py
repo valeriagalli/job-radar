@@ -1,20 +1,21 @@
 """
 Test module for the configuration.
 """
+
 import pytest
 
 from job_radar.config import load_config
 
 
 def test_no_config_file(tmp_path) -> None:
-    """Validate that the an exception is raised if the configuration file does not exist."""
+    """Validate FileNotFoundError for missing configuration file."""
     invalid_path = tmp_path / "non_existent_config.yaml"
     with pytest.raises(FileNotFoundError):
         load_config(path=invalid_path)
 
 
 def test_empty_config_file(tmp_path) -> None:
-    """Validate that an exception is raised if the configuration file is empty."""
+    """Validate ValueError for empty configuration file."""
     empty_config_path = tmp_path / "empty_config.yaml"
     empty_config_path.write_text("", encoding="utf-8")
     with pytest.raises(ValueError):
@@ -22,7 +23,7 @@ def test_empty_config_file(tmp_path) -> None:
 
 
 def test_non_dict_config(tmp_path) -> None:
-    """Validate that an exception is raised if the configuration file does not contain a dictionary."""
+    """Validate ValueError for invalid configuration file."""
     invalid_config_path = tmp_path / "invalid_config.yaml"
     invalid_config_path.write_text("- linkedin\n- jobs_ch\n", encoding="utf-8")
     with pytest.raises(ValueError):

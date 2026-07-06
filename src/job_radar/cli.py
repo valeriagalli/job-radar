@@ -1,6 +1,7 @@
 """
 Command-line interface for Job Radar.
 """
+
 import argparse
 
 from job_radar.config import load_config
@@ -18,7 +19,7 @@ def create_parser() -> argparse.ArgumentParser:
         choices=["linkedin", "jobs_ch", "indeed", "all"],
         help="Search platform to open",
     )
-    
+
     return parser
 
 

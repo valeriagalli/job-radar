@@ -1,6 +1,7 @@
 """
 Open configured job search URLs in the default web browser.
 """
+
 import webbrowser
 from urllib.parse import urlparse
 
@@ -18,7 +19,7 @@ def open_links(config: dict, section: str) -> None:
         if not links:
             print(f"No searches found for '{current_section}'.")
             continue
-        
+
         print(f"\nOpening {current_section} searches:")
         for item in links:
             title = item.get("title", "Unnamed search")
@@ -26,13 +27,12 @@ def open_links(config: dict, section: str) -> None:
 
             if not isinstance(url, str):
                 raise ValueError(f"URL for '{title}' must be a string.")
-            
+
             url = url.strip()
             parsed = urlparse(url)
 
             if parsed.scheme not in {"http", "https"} or not parsed.netloc:
                 raise ValueError(f"Invalid URL for '{title}': {url}")
-            
+
             print(f"- {title}")
             webbrowser.open_new_tab(url)
-        

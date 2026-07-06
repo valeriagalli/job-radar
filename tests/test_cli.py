@@ -1,8 +1,9 @@
 """
 Test module for the command-line interface.
 """
+
 import pytest
- 
+
 from job_radar.cli import create_parser
 
 
@@ -22,5 +23,3 @@ def test_invalid_choices() -> None:
     for choice in invalid_choices:
         with pytest.raises(SystemExit):
             parser.parse_args([choice])
-    
-    
