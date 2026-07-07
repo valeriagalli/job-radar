@@ -3,24 +3,27 @@ Open configured job search URLs in the default web browser.
 """
 
 import webbrowser
+import logging
 from urllib.parse import urlparse
+
+
+logger= logging.getLogger(__name__)
 
 
 def open_links(config: dict, section: str) -> None:
     sections = config.keys() if section == "all" else [section]
 
     if section != "all" and section not in config:
-        print(section)
         raise ValueError(f"Unknown section: {section}")
 
     for current_section in sections:
         links = config.get(current_section, [])
 
         if not links:
-            print(f"No searches found for '{current_section}'.")
+            logger.info("No searches found for %s.", current_section)
             continue
 
-        print(f"\nOpening {current_section} searches:")
+        logger.info("Opening %s searches:", current_section)
         for item in links:
             title = item.get("title", "Unnamed search")
             url = item.get("url")
@@ -34,5 +37,5 @@ def open_links(config: dict, section: str) -> None:
             if parsed.scheme not in {"http", "https"} or not parsed.netloc:
                 raise ValueError(f"Invalid URL for '{title}': {url}")
 
-            print(f"- {title}")
+            logger.info("- %s", title)
             webbrowser.open_new_tab(url)

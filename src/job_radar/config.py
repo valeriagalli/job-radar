@@ -3,11 +3,14 @@ Load and validate the application configuration from YAML files.
 """
 
 from pathlib import Path
+import logging
 
 import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CONFIG_PATH = PROJECT_ROOT / "search_config.yaml"
+
+logger = logging.getLogger(__name__)
 
 
 def load_config(path: Path = CONFIG_PATH) -> dict:

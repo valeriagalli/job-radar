@@ -98,8 +98,8 @@ job-radar/
 
 ### v0.2
 - [X] Unit tests
-- [ ] Ruff formatting
-- [ ] Logging
+- [X] Ruff formatting
+- [X] Logging
 
 ### v0.3
 - [ ] Docker support

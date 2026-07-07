@@ -6,6 +6,7 @@ import argparse
 
 from job_radar.config import load_config
 from job_radar.launcher import open_links
+from job_radar.logging_config import configure_logging
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -25,6 +26,8 @@ def create_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     """Parse command-line arguments and launch the selected searches."""
+    configure_logging()
+
     parser = create_parser()
     args = parser.parse_args()
 
