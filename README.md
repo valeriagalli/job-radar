@@ -35,28 +35,18 @@ pip install -e ".[dev]"
 
 ## Usage
 
-Open LinkedIn searches
+Open a single job search platform:
 
 ```bash
-python src/job_radar/cli.py linkedin
+job-radar linkedin
+job-radar jobs_ch
+job-radar indeed
 ```
 
-Open jobs.ch searches
+Or open all configured searches:
 
 ```bash
-python src/job_radar/cli.py jobs_ch
-```
-
-Open Indeed searches
-
-```bash
-python src/job_radar/cli.py indeed
-```
-
-Open all searches
-
-```bash
-python src/job_radar/cli.py all
+job-radar all
 ```
 
 
@@ -102,6 +92,7 @@ job-radar/
 - [X] Logging
 
 ### v0.3
+- [ ] Console Script
 - [ ] Docker support
 - [ ] GitHub Actions
 

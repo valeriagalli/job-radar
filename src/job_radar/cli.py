@@ -12,6 +12,7 @@ from job_radar.logging_config import configure_logging
 def create_parser() -> argparse.ArgumentParser:
     """Create and return the argument parser for the CLI."""
     parser = argparse.ArgumentParser(
+        prog="job-radar",
         description="Open predefined job searches in your default web browser."
     )
 
