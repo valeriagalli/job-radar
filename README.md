@@ -13,21 +13,21 @@ Job Radar automates this repetitive workflow while serving as a practical softwa
 
 ### PowerShell
 
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/<your_username>/job-radar.git
 cd job-radar
 ```
 
-Create a virtual environment
+Create a virtual environment:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install the project
+Install the project:
 
 ```powershell
 pip install -e ".[dev]"
@@ -66,6 +66,7 @@ job-radar/
 │       ├── cli.py
 │       ├── config.py
 │       └── launcher.py
+│       └── logging_config.py
 ├── tests/
 │   ├── test_cli.py
 │   ├── test_config.py
@@ -92,9 +93,10 @@ job-radar/
 - [X] Logging
 
 ### v0.3
-- [ ] Console Script
-- [ ] Docker support
+- [X] Console Script
 - [ ] GitHub Actions
+- [ ] Docker support
+
 
 ### v1.0
 - [ ] Career page monitoring
