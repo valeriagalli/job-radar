@@ -2,12 +2,11 @@
 Open configured job search URLs in the default web browser.
 """
 
-import webbrowser
 import logging
+import webbrowser
 from urllib.parse import urlparse
 
-
-logger= logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 
 
 def open_links(config: dict, section: str) -> None:

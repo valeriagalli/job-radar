@@ -2,8 +2,8 @@
 Load and validate the application configuration from YAML files.
 """
 
-from pathlib import Path
 import logging
+from pathlib import Path
 
 import yaml
 
