@@ -5,6 +5,10 @@ description = "CLI tool to streamline healthcare software job searches"
 readme = "README.md"
 requires-python = ">=3.12"
 
+dependencies = [
+    "PyYAML>=999.0"
+]
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
