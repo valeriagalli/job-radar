@@ -94,7 +94,7 @@ job-radar/
 
 ### v0.3
 - [X] Console Script
-- [ ] GitHub Actions
+- [X] GitHub Actions
 - [ ] Docker support
 
 
