@@ -40,7 +40,6 @@ Open a single job search platform:
 ```bash
 job-radar linkedin
 job-radar jobs_ch
-job-radar indeed
 ```
 
 Or open all configured searches:

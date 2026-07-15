@@ -4,7 +4,7 @@ Command-line interface for Job Radar.
 
 import argparse
 
-from job_radar.config import load_config
+import job_radar.config as config
 from job_radar.launcher import open_links
 from job_radar.logging_config import configure_logging
 
@@ -18,11 +18,22 @@ def create_parser() -> argparse.ArgumentParser:
 
     parser.add_argument(
         "section",
-        choices=["linkedin", "jobs_ch", "indeed", "all"],
+        choices=["linkedin", "jobs_ch", "all", "companies"],
         help="Search platform to open",
     )
 
     return parser
+
+
+def run(section: str) -> None:
+    """Run the workflow selected by the user"""
+    if section == "companies":
+        companies_config = config.load_config(config.COMPANIES_PATH)
+        config.validate_company_config(companies_config)
+    else:
+        searches_config = config.load_config(config.SEARCHES_PATH)
+        config.validate_search_config(searches_config, section)
+        open_links(searches_config, section)
 
 
 def main() -> None:
@@ -32,9 +43,7 @@ def main() -> None:
     parser = create_parser()
     args = parser.parse_args()
 
-    config = load_config()
-
-    open_links(config, args.section)
+    run(args.section)
 
 
 if __name__ == "__main__":
