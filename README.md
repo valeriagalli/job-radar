@@ -95,12 +95,14 @@ job-radar/
 ### v0.3
 - [X] Console Script
 - [X] GitHub Actions
+
+### v0.4
+- [X] Improve search relevance
+- [ ] Add company career-page searches
+- [ ] Test company career-page searches
+
+### v0.5
 - [ ] Docker support
-
-
-### v1.0
-- [ ] Career page monitoring
-- [ ] Job scoring
 
 
 ## Status

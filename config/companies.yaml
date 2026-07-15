@@ -1,0 +1,259 @@
+companies:
+
+  # ==========================
+  # High-priority monitoring
+  # ==========================
+
+  - name: Roche
+    careers_url: https://careers.roche.com/
+    category: monitor
+    priority: high
+    tags:
+      - ai
+      - data
+      - software
+      - diagnostics
+      - pharma
+
+  - name: Sonova
+    careers_url: https://jobs.sonova.com/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - machine_learning
+      - signal_processing
+      - medical_devices
+
+  - name: Siemens Healthineers
+    careers_url: https://careers.siemens-healthineers.com/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - systems
+      - ai
+      - diagnostics
+      - medical_imaging
+      - medical_devices
+
+  - name: GE HealthCare
+    careers_url: https://careers.gehealthcare.com/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - diagnostics
+      - medical_imaging
+      - medical_devices
+
+  - name: Abbott
+    careers_url: https://www.jobs.abbott/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - systems
+      - diagnostics
+      - medical_devices
+
+  - name: Abbott Thoratec
+    careers_url: https://www.jobs.abbott/
+    category: monitor
+    priority: high
+    tags:
+      - systems
+      - project_engineering
+      - product_development
+      - cardiovascular
+      - medical_devices
+
+  - name: Philips
+    careers_url: https://www.careers.philips.com/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - patient_monitoring
+      - medical_devices
+
+  - name: SHL Medical
+    careers_url: https://www.shl-medical.com/careers/
+    category: monitor
+    priority: high
+    tags:
+      - systems
+      - project_engineering
+      - product_development
+      - medical_devices
+
+  - name: Liom
+    careers_url: https://liom.com/careers/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - machine_learning
+      - signal_processing
+      - wearables
+      - digital_health
+
+  - name: greenTEG
+    careers_url: https://www.greenteg.com/jobs/
+    category: monitor
+    priority: high
+    tags:
+      - signal_processing
+      - wearables
+      - sensors
+      - medical_devices
+
+  - name: BreezeLabs
+    careers_url: https://breezelabs.com/careers/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - wearables
+      - digital_health
+
+  - name: Unilabs
+    careers_url: https://careers.unilabs.com/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - diagnostics
+      - pathology
+
+  - name: Securecell
+    careers_url: https://securecell.ch/careers/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - systems
+      - biotech
+
+  - name: ndd Medical Technologies
+    careers_url: https://nddmed.com/jobs/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - systems
+      - diagnostics
+      - medical_devices
+
+  - name: Human Technopole
+    careers_url: https://humantechnopole.it/en/work-with-us/
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - bioinformatics
+      - research
+
+  # ==========================
+  # Medium-priority monitoring
+  # ==========================
+
+  - name: CSEM
+    careers_url: https://www.csem.ch/jobs/
+    category: monitor
+    priority: medium
+    tags:
+      - ai
+      - sensors
+      - medical_devices
+
+  - name: Hemotune
+    careers_url: https://hemotune.com/careers/
+    category: monitor
+    priority: medium
+    tags:
+      - software
+      - ai
+      - medical_devices
+
+  - name: CUTISS
+    careers_url: https://cutiss.swiss/careers/
+    category: monitor
+    priority: medium
+    tags:
+      - biotech
+      - regenerative_medicine
+
+  - name: Sleepiz
+    careers_url: https://www.sleepiz.com/careers/
+    category: monitor
+    priority: medium
+    tags:
+      - ai
+      - signal_processing
+      - digital_health
+
+  - name: Balgrist University Hospital
+    careers_url: https://www.balgrist.ch/en/career/jobs/
+    category: monitor
+    priority: medium
+    tags:
+      - ai
+      - clinical
+      - digital_health
+      - research
+
+  # ==========================
+  # Spontaneous applications
+  # ==========================
+
+  - name: RetinAI
+    careers_url: https://www.retinai.com/careers/
+    category: spontaneous
+    priority: high
+    tags:
+      - ai
+      - software
+      - medical_imaging
+
+  - name: MaxWell Biosystems
+    careers_url: https://www.mxwbio.com/careers
+    category: spontaneous
+    priority: high
+    tags:
+      - ai
+      - software
+      - electrophysiology
+
+  - name: dacadoo
+    careers_url: https://www.dacadoo.com/about/careers/
+    category: spontaneous
+    priority: high
+    tags:
+      - ai
+      - digital_health
+      - wearables
+
+  - name: ZMT Zurich MedTech
+    careers_url: https://www.zmt.swiss/careers/
+    category: spontaneous
+    priority: high
+    tags:
+      - medical_devices
+      - software
+      - ai
+
+  - name: Piomic
+    careers_url: https://www.piomic.com/careers/
+    category: spontaneous
+    priority: high
+    tags:
+      - ai
+      - diagnostics
+      - digital_health
+      - software
