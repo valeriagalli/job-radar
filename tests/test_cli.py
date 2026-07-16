@@ -45,21 +45,21 @@ def test_run_routes_to_search_workflow(monkeypatch) -> None:
     def fake_load_config(path):
         loaded_paths.append(path)
         return search_config
-    
-    monkeypatch.setattr("job_radar.cli.config.load_config", 
-                        fake_load_config)
-    
+
+    monkeypatch.setattr("job_radar.cli.config.load_config", fake_load_config)
+
     def fake_validate_search_config(config_data, section):
         validated_config_data.append(config_data)
         validated_sections.append(section)
-    
-    monkeypatch.setattr("job_radar.cli.config.validate_search_config", 
-                        fake_validate_search_config)
+
+    monkeypatch.setattr(
+        "job_radar.cli.config.validate_search_config", fake_validate_search_config
+    )
 
     def fake_open_links(config_data, section):
         opened_config_data.append(config_data)
         opened_sections.append(section)
-    
+
     monkeypatch.setattr("job_radar.cli.open_links", fake_open_links)
 
     run("linkedin")
@@ -69,7 +69,7 @@ def test_run_routes_to_search_workflow(monkeypatch) -> None:
     assert validated_sections == ["linkedin"]
     assert opened_config_data == [search_config]
     assert opened_sections == ["linkedin"]
-    
+
 
 def test_run_routes_to_company_workflow(monkeypatch, sample_company_config) -> None:
     """Validate that the run function routes to the company workflow for 'companies'."""
@@ -79,14 +79,15 @@ def test_run_routes_to_company_workflow(monkeypatch, sample_company_config) -> N
     def fake_load_config(path):
         loaded_paths.append(path)
         return sample_company_config
-    
+
     monkeypatch.setattr("job_radar.cli.config.load_config", fake_load_config)
-    
+
     def fake_validate_company_config(config_data):
         validated_calls.append(config_data)
-    
-    monkeypatch.setattr("job_radar.cli.config.validate_company_config", 
-                        fake_validate_company_config)
+
+    monkeypatch.setattr(
+        "job_radar.cli.config.validate_company_config", fake_validate_company_config
+    )
 
     run("companies")
 

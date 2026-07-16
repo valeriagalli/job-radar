@@ -79,6 +79,16 @@ companies:
       - patient_monitoring
       - medical_devices
 
+  - name: Tecan
+    url: https://careers.tecan.com
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - data
+      - healthcare
+
   - name: SHL Medical
     url: https://www.shl-medical.com/careers/
     category: monitor
@@ -171,6 +181,25 @@ companies:
       - ai
       - sensors
       - medical_devices
+
+  - name: BIOTRONIK
+    url: https://jobs.biotronik.com
+    category: monitor
+    priority: medium
+    tags:
+      - software
+      - embedded
+      - medical_devices
+
+  - name: Thermo Fisher Scientific
+    url: https://jobs.thermofisher.com
+    category: monitor
+    priority: medium
+    tags:
+      - software
+      - ai
+      - data
+      - life_sciences
 
   - name: Hemotune
     url: https://hemotune.com/careers/

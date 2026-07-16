@@ -14,7 +14,7 @@ def open_links(search_config: dict, section: str) -> None:
 
     for current_section in sections:
         logger.info("Opening %s searches:", current_section)
-        
+
         for search in search_config[current_section]:
             logger.info("- %s", search["title"])
             webbrowser.open_new_tab(search["url"])
