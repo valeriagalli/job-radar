@@ -5,7 +5,7 @@ companies:
   # ==========================
 
   - name: Roche
-    url: https://careers.roche.com/
+    url: https://careers.roche.com/global/en/search-results?qstate=Zug&qcountry=Switzerland
     category: monitor
     priority: high
     tags:
@@ -16,7 +16,7 @@ companies:
       - pharma
 
   - name: Sonova
-    url: https://jobs.sonova.com/
+    url: https://www.sonova.com/en/jobs?country=718&keywords=
     category: monitor
     priority: high
     tags:
@@ -38,7 +38,7 @@ companies:
       - medical_devices
 
   - name: GE HealthCare
-    url: https://careers.gehealthcare.com/
+    url: https://careers.gehealthcare.com/global/en/search-results?qcountry=Switzerland
     category: monitor
     priority: high
     tags:
@@ -48,18 +48,8 @@ companies:
       - medical_imaging
       - medical_devices
 
-  - name: Abbott
-    url: https://www.jobs.abbott/
-    category: monitor
-    priority: high
-    tags:
-      - software
-      - systems
-      - diagnostics
-      - medical_devices
-
   - name: Abbott Thoratec
-    url: https://www.jobs.abbott/
+    url: https://www.jobs.abbott/global/de/search-results?keywords=zurich 
     category: monitor
     priority: high
     tags:
@@ -70,7 +60,7 @@ companies:
       - medical_devices
 
   - name: Philips
-    url: https://www.careers.philips.com/
+    url: https://www.careers.philips.com/de/de/search-results
     category: monitor
     priority: high
     tags:
@@ -79,8 +69,19 @@ companies:
       - patient_monitoring
       - medical_devices
 
+  - name: Johnson&Johnson
+    url: https://www.careers.jnj.com/en/jobs/?search=&country=Switzerland&type=Full+time&pagesize=20#results 
+    category: monitor
+    priority: high
+    tags:
+      - software
+      - ai
+      - data
+      - healthcare
+      - medical_devices
+
   - name: Tecan
-    url: https://careers.tecan.com
+    url: https://careers.tecan.com/search/?createNewAlert=false&q=Zurich&optionsFacetsDD_location=
     category: monitor
     priority: high
     tags:
@@ -90,7 +91,7 @@ companies:
       - healthcare
 
   - name: SHL Medical
-    url: https://www.shl-medical.com/careers/
+    url: https://www.shl-medical.com/careers/jobs
     category: monitor
     priority: high
     tags:
@@ -100,7 +101,7 @@ companies:
       - medical_devices
 
   - name: Liom
-    url: https://liom.com/careers/
+    url: https://liom.jobs.personio.com/
     category: monitor
     priority: high
     tags:
@@ -111,7 +112,7 @@ companies:
       - digital_health
 
   - name: greenTEG
-    url: https://www.greenteg.com/jobs/
+    url: https://www.greenteg.com/en/company?id=career
     category: monitor
     priority: high
     tags:
@@ -121,7 +122,7 @@ companies:
       - medical_devices
 
   - name: BreezeLabs
-    url: https://breezelabs.com/careers/
+    url: https://www.breezelabs.ai/
     category: monitor
     priority: high
     tags:
@@ -131,7 +132,7 @@ companies:
       - digital_health
 
   - name: Unilabs
-    url: https://careers.unilabs.com/
+    url: https://unilabs.com/our-company/join-us/current-job-opportunities
     category: monitor
     priority: high
     tags:
@@ -141,7 +142,7 @@ companies:
       - pathology
 
   - name: Securecell
-    url: https://securecell.ch/careers/
+    url: https://www.securecell.ch/en/careers-at-securecell
     category: monitor
     priority: high
     tags:
@@ -174,7 +175,7 @@ companies:
   # ==========================
 
   - name: CSEM
-    url: https://www.csem.ch/jobs/
+    url: https://www.csem.ch/en/jobs/?location=Z%C3%BCrich
     category: monitor
     priority: medium
     tags:
@@ -183,7 +184,7 @@ companies:
       - medical_devices
 
   - name: BIOTRONIK
-    url: https://jobs.biotronik.com
+    url: https://career012.successfactors.eu/career?company=C0001096615P&site=VjItMEZ2ZlZmT2hNS29mS0YxZit5VnBpdz09
     category: monitor
     priority: medium
     tags:
@@ -192,7 +193,7 @@ companies:
       - medical_devices
 
   - name: Thermo Fisher Scientific
-    url: https://jobs.thermofisher.com
+    url: https://jobs.thermofisher.com/global/en/search-results?m=3
     category: monitor
     priority: medium
     tags:
@@ -211,21 +212,12 @@ companies:
       - medical_devices
 
   - name: CUTISS
-    url: https://cutiss.swiss/careers/
+    url: https://cutiss.swiss/career/
     category: monitor
     priority: medium
     tags:
       - biotech
       - regenerative_medicine
-
-  - name: Sleepiz
-    url: https://www.sleepiz.com/careers/
-    category: monitor
-    priority: medium
-    tags:
-      - ai
-      - signal_processing
-      - digital_health
 
   - name: Balgrist University Hospital
     url: https://www.balgrist.ch/en/career/jobs/
@@ -242,7 +234,7 @@ companies:
   # ==========================
 
   - name: RetinAI
-    url: https://www.retinai.com/careers/
+    url: https://apply.workable.com/retinai/#jobs
     category: spontaneous
     priority: high
     tags:
@@ -269,7 +261,7 @@ companies:
       - wearables
 
   - name: ZMT Zurich MedTech
-    url: https://www.zmt.swiss/careers/
+    url: https://zmt.swiss/about/about-zmt/jobs
     category: spontaneous
     priority: high
     tags:
@@ -278,7 +270,7 @@ companies:
       - ai
 
   - name: Piomic
-    url: https://www.piomic.com/careers/
+    url: https://www.piomic.com/about-us/careers/
     category: spontaneous
     priority: high
     tags:
