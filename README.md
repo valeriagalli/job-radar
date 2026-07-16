@@ -49,32 +49,37 @@ job-radar all
 ```
 
 
-## Features (v0.1)
-
-- Supports multiple job platforms (LinkedIn, jobs.ch, Indeed).
-- Opens searches in the default web browser.
-- Platform-specific execution from the command line.
+## Features
+- Supports multiple job platforms (LinkedIn, jobs.ch).
+- Opens curated job searches in the default web browser.
+- Launches platform-specific searches from the command line.
 
 
 ## Project structure
 ```text
 job-radar/
+├── .github/
+│   └── workflows/
+│       └── quality-checks.yml
+├── config/
+│   ├── companies.yaml
+│   └── searches.yaml
 ├── src/
 │   └── job_radar/
 │       ├── __init__.py
 │       ├── cli.py
 │       ├── config.py
-│       └── launcher.py
+│       ├── launcher.py
 │       └── logging_config.py
 ├── tests/
+│   ├── conftest.py
 │   ├── test_cli.py
 │   ├── test_config.py
 │   └── test_launcher.py
 ├── .gitignore
 ├── LICENSE
 ├── pyproject.toml
-├── README.md
-└── search_config.yaml
+└── README.md
 ```
 
 ## Roadmap
@@ -97,11 +102,12 @@ job-radar/
 
 ### v0.4
 - [X] Improve search relevance
-- [ ] Add company career-page searches
+- [X] Add company career-page searches
 - [ ] Test company career-page searches
 
 ### v0.5
 - [ ] Docker support
+
 
 
 ## Status

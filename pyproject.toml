@@ -25,6 +25,12 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "I"]
 
+extend-select = [
+    "D100",  # Missing module docstring
+    "D103",  # Missing public function docstring
+]
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
