@@ -1,56 +1,7 @@
 companies:
 
-  # ==========================
-  # High-priority monitoring
-  # ==========================
-
-  - name: Roche
-    url: https://careers.roche.com/global/en/search-results?qstate=Zug&qcountry=Switzerland
-    category: monitor
-    priority: high
-    tags:
-      - ai
-      - data
-      - software
-      - diagnostics
-      - pharma
-
-  - name: Sonova
-    url: https://www.sonova.com/en/jobs?country=718&keywords=
-    category: monitor
-    priority: high
-    tags:
-      - software
-      - machine_learning
-      - signal_processing
-      - medical_devices
-
-  - name: Siemens Healthineers
-    url: https://careers.siemens-healthineers.com/
-    category: monitor
-    priority: high
-    tags:
-      - software
-      - systems
-      - ai
-      - diagnostics
-      - medical_imaging
-      - medical_devices
-
-  - name: GE HealthCare
-    url: https://careers.gehealthcare.com/global/en/search-results?qcountry=Switzerland
-    category: monitor
-    priority: high
-    tags:
-      - software
-      - ai
-      - diagnostics
-      - medical_imaging
-      - medical_devices
-
   - name: Abbott Thoratec
-    url: https://www.jobs.abbott/global/de/search-results?keywords=zurich 
-    category: monitor
+    url: https://www.jobs.abbott/global/de/search-results?keywords=zurich
     priority: high
     tags:
       - systems
@@ -59,50 +10,95 @@ companies:
       - cardiovascular
       - medical_devices
 
-  - name: Philips
-    url: https://www.careers.philips.com/de/de/search-results
-    category: monitor
+  - name: Balgrist University Hospital
+    url: https://www.balgrist.ch/en/career/jobs/
+    priority: medium
+    tags:
+      - ai
+      - clinical
+      - digital_health
+      - research
+
+  - name: BIOTRONIK
+    url: https://career012.successfactors.eu/career?company=C0001096615P&site=VjItMEZ2ZlZmT2hNS29mS0YxZit5VnBpdz09
+    priority: medium
+    tags:
+      - software
+      - embedded
+      - medical_devices
+
+  - name: BreezeLabs
+    url: https://www.breezelabs.ai/
     priority: high
     tags:
       - software
       - ai
-      - patient_monitoring
+      - wearables
+      - digital_health
+
+  - name: CSEM
+    url: https://www.csem.ch/en/jobs/?location=Z%C3%BCrich
+    priority: medium
+    tags:
+      - ai
+      - sensors
       - medical_devices
 
-  - name: Johnson&Johnson
-    url: https://www.careers.jnj.com/en/jobs/?search=&country=Switzerland&type=Full+time&pagesize=20#results 
-    category: monitor
+  - name: CUTISS
+    url: https://cutiss.swiss/career/
+    priority: medium
+    tags:
+      - biotech
+      - regenerative_medicine
+
+  - name: GE HealthCare
+    url: https://careers.gehealthcare.com/global/en/search-results?qcountry=Switzerland
+    priority: high
+    tags:
+      - software
+      - ai
+      - diagnostics
+      - medical_imaging
+      - medical_devices
+
+  - name: greenTEG
+    url: https://www.greenteg.com/en/company?id=career
+    priority: high
+    tags:
+      - signal_processing
+      - wearables
+      - sensors
+      - medical_devices
+
+  - name: Hemotune
+    url: https://hemotune.com/careers/
+    priority: medium
+    tags:
+      - software
+      - ai
+      - medical_devices
+
+  - name: Human Technopole
+    url: https://humantechnopole.it/en/work-with-us/
+    priority: high
+    tags:
+      - software
+      - ai
+      - bioinformatics
+      - research
+
+  - name: Johnson & Johnson
+    url: https://www.careers.jnj.com/en/jobs/?search=&country=Switzerland&type=Full+time&pagesize=20#results
     priority: high
     tags:
       - software
       - ai
       - data
       - healthcare
-      - medical_devices
-
-  - name: Tecan
-    url: https://careers.tecan.com/search/?createNewAlert=false&q=Zurich&optionsFacetsDD_location=
-    category: monitor
-    priority: high
-    tags:
-      - software
-      - ai
-      - data
-      - healthcare
-
-  - name: SHL Medical
-    url: https://www.shl-medical.com/careers/jobs
-    category: monitor
-    priority: high
-    tags:
-      - systems
-      - project_engineering
-      - product_development
       - medical_devices
 
   - name: Liom
     url: https://liom.jobs.personio.com/
-    category: monitor
     priority: high
     tags:
       - software
@@ -111,90 +107,82 @@ companies:
       - wearables
       - digital_health
 
-  - name: greenTEG
-    url: https://www.greenteg.com/en/company?id=career
-    category: monitor
+  - name: ndd Medical Technologies
+    url: https://nddmed.com/jobs/
     priority: high
     tags:
-      - signal_processing
-      - wearables
-      - sensors
+      - software
+      - systems
+      - diagnostics
       - medical_devices
 
-  - name: BreezeLabs
-    url: https://www.breezelabs.ai/
-    category: monitor
+  - name: Philips
+    url: https://www.careers.philips.com/de/de/search-results
     priority: high
     tags:
       - software
       - ai
-      - wearables
-      - digital_health
+      - patient_monitoring
+      - medical_devices
 
-  - name: Unilabs
-    url: https://unilabs.com/our-company/join-us/current-job-opportunities
-    category: monitor
+  - name: Roche
+    url: https://careers.roche.com/global/en/search-results?qstate=Zug&qcountry=Switzerland
     priority: high
     tags:
-      - software
       - ai
+      - data
+      - software
       - diagnostics
-      - pathology
+      - pharma
 
   - name: Securecell
     url: https://www.securecell.ch/en/careers-at-securecell
-    category: monitor
     priority: high
     tags:
       - software
       - systems
       - biotech
 
-  - name: ndd Medical Technologies
-    url: https://nddmed.com/jobs/
-    category: monitor
+  - name: SHL Medical
+    url: https://www.shl-medical.com/careers/jobs
+    priority: high
+    tags:
+      - systems
+      - project_engineering
+      - product_development
+      - medical_devices
+
+  - name: Siemens Healthineers
+    url: https://careers.siemens-healthineers.com/
     priority: high
     tags:
       - software
       - systems
+      - ai
       - diagnostics
+      - medical_imaging
       - medical_devices
 
-  - name: Human Technopole
-    url: https://humantechnopole.it/en/work-with-us/
-    category: monitor
+  - name: Sonova
+    url: https://www.sonova.com/en/jobs?country=718&keywords=
+    priority: high
+    tags:
+      - software
+      - machine_learning
+      - signal_processing
+      - medical_devices
+
+  - name: Tecan
+    url: https://careers.tecan.com/search/?createNewAlert=false&q=Zurich&optionsFacetsDD_location=
     priority: high
     tags:
       - software
       - ai
-      - bioinformatics
-      - research
-
-  # ==========================
-  # Medium-priority monitoring
-  # ==========================
-
-  - name: CSEM
-    url: https://www.csem.ch/en/jobs/?location=Z%C3%BCrich
-    category: monitor
-    priority: medium
-    tags:
-      - ai
-      - sensors
-      - medical_devices
-
-  - name: BIOTRONIK
-    url: https://career012.successfactors.eu/career?company=C0001096615P&site=VjItMEZ2ZlZmT2hNS29mS0YxZit5VnBpdz09
-    category: monitor
-    priority: medium
-    tags:
-      - software
-      - embedded
-      - medical_devices
+      - data
+      - healthcare
 
   - name: Thermo Fisher Scientific
     url: https://jobs.thermofisher.com/global/en/search-results?m=3
-    category: monitor
     priority: medium
     tags:
       - software
@@ -202,79 +190,11 @@ companies:
       - data
       - life_sciences
 
-  - name: Hemotune
-    url: https://hemotune.com/careers/
-    category: monitor
-    priority: medium
+  - name: Unilabs
+    url: https://unilabs.com/our-company/join-us/current-job-opportunities
+    priority: high
     tags:
       - software
-      - ai
-      - medical_devices
-
-  - name: CUTISS
-    url: https://cutiss.swiss/career/
-    category: monitor
-    priority: medium
-    tags:
-      - biotech
-      - regenerative_medicine
-
-  - name: Balgrist University Hospital
-    url: https://www.balgrist.ch/en/career/jobs/
-    category: monitor
-    priority: medium
-    tags:
-      - ai
-      - clinical
-      - digital_health
-      - research
-
-  # ==========================
-  # Spontaneous applications
-  # ==========================
-
-  - name: RetinAI
-    url: https://apply.workable.com/retinai/#jobs
-    category: spontaneous
-    priority: high
-    tags:
-      - ai
-      - software
-      - medical_imaging
-
-  - name: MaxWell Biosystems
-    url: https://www.mxwbio.com/careers
-    category: spontaneous
-    priority: high
-    tags:
-      - ai
-      - software
-      - electrophysiology
-
-  - name: dacadoo
-    url: https://www.dacadoo.com/about/careers/
-    category: spontaneous
-    priority: high
-    tags:
-      - ai
-      - digital_health
-      - wearables
-
-  - name: ZMT Zurich MedTech
-    url: https://zmt.swiss/about/about-zmt/jobs
-    category: spontaneous
-    priority: high
-    tags:
-      - medical_devices
-      - software
-      - ai
-
-  - name: Piomic
-    url: https://www.piomic.com/about-us/careers/
-    category: spontaneous
-    priority: high
-    tags:
       - ai
       - diagnostics
-      - digital_health
-      - software
+      - pathology
