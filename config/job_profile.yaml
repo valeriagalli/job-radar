@@ -1,0 +1,160 @@
+# Job Radar configuration
+#
+# Defines the job profile used to evaluate scraped vacancies.
+#
+# tags: Job titles or title phrases used during the title filtering stage.
+# keywords: Keywords searched within the job description to compute a relevance score.
+#
+# All entries should be written in plain English. Common abbreviations
+# (e.g. AI, ML, R&D, FDA, SaMD) are expanded during normalization.
+
+# ---------------------------------------------------------------------
+# Job title filtering
+# ---------------------------------------------------------------------
+tags:
+  # Software and computational roles
+  - software engineer
+  - software developer
+  - research software engineer
+  - scientific software engineer
+  - scientific programmer
+  - computational engineer
+  - computational scientist
+  - research engineer
+  - development engineer
+  - r&d engineer
+
+  # Data and AI roles
+  - data scientist
+  - data engineer
+  - machine learning engineer
+  - artificial intelligence engineer
+  - deep learning engineer
+  - algorithm engineer
+  - applied scientist
+
+  # Biomedical and scientific roles
+  - biomedical engineer
+  - bioinformatics engineer
+  - bioinformatics scientist
+  - medical imaging engineer
+  - imaging scientist
+  - signal processing engineer
+  - digital biomarker scientist
+  - clinical informatics specialist
+  - health informatics specialist
+
+  # Medical-device and product-development roles
+  - systems engineer
+  - project engineer
+  - product development engineer
+  - process development engineer
+  - medical device engineer
+  - verification engineer
+  - validation engineer
+
+  # Data-management roles
+  - data manager
+  - research data manager
+  - clinical data manager
+  - scientific data manager
+
+# ---------------------------------------------------------------------
+# Job description relevance
+# ---------------------------------------------------------------------
+keywords:
+  # Programming and software engineering
+  - python
+  - software engineering
+  - scientific computing
+  - object-oriented programming
+  - testing
+  - unit testing
+  - integration testing
+  - regression testing
+  - documentation
+  - version control
+  - git
+  - continuous integration
+  - continuous delivery
+  - docker
+  - cloud computing
+  - application programming interface
+  - rest api
+
+  # Data and machine learning
+  - machine learning
+  - artificial intelligence
+  - deep learning
+  - classification
+  - regression
+  - time series
+  - signal processing
+  - feature engineering
+  - data analysis
+  - data pipeline
+  - data processing
+  - data validation
+  - data quality
+  - statistical analysis
+  - model validation
+  - model monitoring
+
+  # Python ecosystem
+  - scikit-learn
+  - pandas
+  - numpy
+  - scipy
+  - pytorch
+  - tensorflow
+
+  # Healthcare and biomedical domains
+  - healthcare
+  - digital health
+  - medical device
+  - software as a medical device
+  - clinical decision support
+  - clinical data
+  - biomedical data
+  - physiological data
+  - wearable sensor
+  - wearable technology
+  - medical imaging
+  - computer vision
+  - bioinformatics
+  - computational biology
+  - digital biomarker
+  - patient monitoring
+  - pathology
+
+  # Medical-device development and regulation
+  - verification and validation
+  - design control
+  - risk management
+  - quality management system
+  - medical device regulation
+  - food and drug administration
+  - international organization for standardization
+  - international electrotechnical commission
+  - clinical evaluation
+  - regulated environment
+
+  # Research and experimental work
+  - experimental design
+  - human study
+  - clinical study
+  - clinical trial
+  - research data management
+  - reproducibility
+  - metadata
+  - multimodal data
+  - sensor data
+
+  # Product and multidisciplinary work
+  - product development
+  - systems engineering
+  - requirements engineering
+  - stakeholder management
+  - multidisciplinary team
+  - clinician collaboration
+  - technology transfer

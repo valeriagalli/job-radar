@@ -63,6 +63,7 @@ job-radar/
 │       └── quality-checks.yml
 ├── config/
 │   ├── companies.yaml
+│   ├── job_profile.yaml
 │   └── searches.yaml
 ├── src/
 │   └── job_radar/

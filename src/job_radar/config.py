@@ -13,7 +13,7 @@ CONFIG_DIR = PROJECT_ROOT / "config"
 SEARCHES_PATH = CONFIG_DIR / "searches.yaml"
 COMPANIES_PATH = CONFIG_DIR / "companies.yaml"
 SEARCHES_REQUIRED_FIELDS = ["title", "url"]
-COMPANIES_REQUIRED_FIELDS = ["name", "url", "category", "priority", "tags"]
+COMPANIES_REQUIRED_FIELDS = ["name", "url", "priority", "tags"]
 
 logger = logging.getLogger(__name__)
 
