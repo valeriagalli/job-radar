@@ -12,8 +12,10 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CONFIG_DIR = PROJECT_ROOT / "config"
 SEARCHES_PATH = CONFIG_DIR / "searches.yaml"
 COMPANIES_PATH = CONFIG_DIR / "companies.yaml"
+JOB_PROFILE_PATH = CONFIG_DIR / "job_profile.yaml"
 SEARCHES_REQUIRED_FIELDS = ["name", "url"]
 COMPANIES_REQUIRED_FIELDS = ["name", "url", "priority", "tags"]
+
 
 logger = logging.getLogger(__name__)
 
@@ -94,3 +96,19 @@ def validate_company_config(config: dict) -> None:
     for company in companies:
         _validate_required_fields(company, COMPANIES_REQUIRED_FIELDS)
         _validate_url(company["url"])
+
+
+def validate_job_profile_config(config: dict) -> None:
+    """Validate the job profile configuration."""
+    for field in ("tags", "keywords"):
+        values = config.get(field)
+
+        if not isinstance(values, list):
+            raise ValueError(f"'{field}' must contain a list.")
+
+        if not values:
+            logger.info("No %s found in the job profile.", field)
+            continue
+
+        if not all(isinstance(value, str) for value in values):
+            raise ValueError(f"All '{field}' entries must be strings.")

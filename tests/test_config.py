@@ -66,18 +66,16 @@ def test_invalid_search_section() -> None:
 
 
 def test_companies_not_a_list() -> None:
-    """Validate ValueError for invalid section."""
+    """Validate ValueError when companies is not a list."""
     companies_config = {
-        "companies": [
-            {
-                "name": "Biomedical Engineer",
-                "url": "invalid_url",
-            }
-        ]
+        "companies": {
+            "name": "Company A",
+            "url": "https://example.com",
+        }
     }
 
-    with pytest.raises(ValueError, match="Unknown section"):
-        config.validate_search_config(companies_config, "invalid_section")
+    with pytest.raises(ValueError, match="must contain a list"):
+        config.validate_company_config(companies_config)
 
 
 def test_non_string_url_raises_value_error() -> None:
@@ -130,9 +128,6 @@ def test_missing_required_company_field_raises_value_error() -> None:
             {
                 "name": "Company A",
                 "url": "https://example.com",
-                "priority": "low",
-                # missing category
-                # missing tags
             }
         ]
     }
@@ -140,3 +135,46 @@ def test_missing_required_company_field_raises_value_error() -> None:
         config.validate_company_config(
             companies_config,
         )
+
+
+def test_valid_job_profile_config() -> None:
+    """Validate a valid job profile configuration."""
+    job_profile_config = {
+        "tags": ["software engineer"],
+        "keywords": ["python"],
+    }
+
+    config.validate_job_profile_config(job_profile_config)
+
+
+@pytest.mark.parametrize("field", ["tags", "keywords"])
+def test_invalid_job_profile_field_raises_value_error(field: str) -> None:
+    """Validate ValueError when a job profile field is not a list."""
+    job_profile_config = {
+        "tags": ["software engineer"],
+        "keywords": ["python"],
+    }
+    job_profile_config[field] = "invalid"
+
+    with pytest.raises(
+        ValueError,
+        match=rf"'{field}' must contain a list",
+    ):
+        config.validate_job_profile_config(job_profile_config)
+
+
+@pytest.mark.parametrize("field", ["tags", "keywords"])
+def test_job_profile_entries_must_be_strings(field: str) -> None:
+    """Validate ValueError when a job profile contains non-string entries."""
+    job_profile_config = {
+        "tags": ["software engineer"],
+        "keywords": ["python"],
+    }
+
+    job_profile_config[field] = ["valid", 123]
+
+    with pytest.raises(
+        ValueError,
+        match=rf"All '{field}' entries must be strings",
+    ):
+        config.validate_job_profile_config(job_profile_config)

@@ -32,11 +32,26 @@ def sample_company_config() -> dict:
             {
                 "name": "Company A",
                 "url": "https://example.com",
-                "category": "monitor",
                 "priority": "high",
-                "tags": ["software"],
             }
         ]
+    }
+
+
+@pytest.fixture
+def sample_job_profile_config() -> dict:
+    """Return a valid sample job profile configuration."""
+    return {
+        "tags": [
+            "clinical software engineer",
+            "digital health engineer",
+            "software engineer",
+        ],
+        "keywords": [
+            "deep learning",
+            "classification",
+            "regression",
+        ],
     }
 
 
