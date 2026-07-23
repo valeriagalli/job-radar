@@ -11,13 +11,13 @@ def sample_search_config() -> dict[str, list[dict[str, str]]]:
     return {
         "linkedin": [
             {
-                "title": "Software Engineer Healthcare",
+                "name": "Software Engineer Healthcare",
                 "url": "https://www.linkedin.com/jobs",
             }
         ],
         "jobs_ch": [
             {
-                "title": "Medical Imaging",
+                "name": "Medical Imaging",
                 "url": "https://www.jobs.ch/en/vacancies",
             }
         ],

@@ -31,7 +31,7 @@ def test_run_routes_to_search_workflow(monkeypatch) -> None:
     search_config = {
         "linkedin": [
             {
-                "title": "Biomedical Engineer",
+                "name": "Biomedical Engineer",
                 "url": "https://example.com",
             }
         ]

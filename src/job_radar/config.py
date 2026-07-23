@@ -12,7 +12,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CONFIG_DIR = PROJECT_ROOT / "config"
 SEARCHES_PATH = CONFIG_DIR / "searches.yaml"
 COMPANIES_PATH = CONFIG_DIR / "companies.yaml"
-SEARCHES_REQUIRED_FIELDS = ["title", "url"]
+SEARCHES_REQUIRED_FIELDS = ["name", "url"]
 COMPANIES_REQUIRED_FIELDS = ["name", "url", "priority", "tags"]
 
 logger = logging.getLogger(__name__)

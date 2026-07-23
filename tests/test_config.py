@@ -36,10 +36,10 @@ def test_valid_config_file(tmp_path) -> None:
     valid_config_path.write_text(
         """
 linkedin:
-  - title: Software Engineer Healthcare
+  - name: Software Engineer Healthcare
     url: https://example.com
 jobs_ch:
-  - title: Medical Software
+  - name: Medical Software
     url: https://example.com
 """,
         encoding="utf-8",
@@ -55,7 +55,7 @@ def test_invalid_search_section() -> None:
     search_config = {
         "linkedin": [
             {
-                "title": "Biomedical Engineer",
+                "name": "Biomedical Engineer",
                 "url": "invalid_url",
             }
         ]
@@ -85,7 +85,7 @@ def test_non_string_url_raises_value_error() -> None:
     search_config = {
         "linkedin": [
             {
-                "title": "Biomedical Engineer",
+                "name": "Biomedical Engineer",
                 "url": 123,
             }
         ]
@@ -100,7 +100,7 @@ def test_invalid_url_raises_value_error() -> None:
     search_config = {
         "linkedin": [
             {
-                "title": "Biomedical Engineer",
+                "name": "Biomedical Engineer",
                 "url": "invalid_url",
             }
         ]
