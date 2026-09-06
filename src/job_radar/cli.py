@@ -30,6 +30,10 @@ def run(section: str) -> None:
     if section == "companies":
         companies_config = config.load_config(config.COMPANIES_PATH)
         config.validate_company_config(companies_config)
+        job_profile_config = config.load_config(config.JOB_PROFILE_PATH)
+        config.validate_job_profile_config(job_profile_config)
+        # extract jobs
+        # present jobs
     else:
         searches_config = config.load_config(config.SEARCHES_PATH)
         config.validate_search_config(searches_config, section)

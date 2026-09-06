@@ -1,0 +1,24 @@
+# Job Radar configuration
+#
+# Defines the companies to be searched for job opportunities.
+#
+# Each company specifies:
+#   - name: Display name of the company.
+#   - url: Careers page used by the extractor.
+#   - priority: User-defined priority (high, medium, low).
+#
+# Copy this file to companies.yaml and fill in your own target companies.
+# companies.yaml is gitignored and will not be committed.
+companies:
+
+  - name: Example MedTech AG
+    url: https://www.example-medtech.com/careers
+    priority: high
+
+  - name: Example Pharma Corp
+    url: https://careers.example-pharma.com/search?location=switzerland
+    priority: medium
+
+  - name: Example Diagnostics Ltd
+    url: https://www.example-diagnostics.com/jobs
+    priority: low

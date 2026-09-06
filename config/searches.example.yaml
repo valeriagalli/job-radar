@@ -1,0 +1,20 @@
+# Job Radar configuration
+#
+# Defines the job searches performed on different job boards and platforms.
+#
+# Each search specifies:
+#   - name: General search name used to identify the search.
+#   - url: URL of the predefined search, including any platform-specific filters.
+#
+# Copy this file to searches.yaml and fill in your own saved searches.
+# searches.yaml is gitignored and will not be committed.
+linkedin:
+  - name: Example Search 1
+    url: "https://www.linkedin.com/jobs/search-results/?keywords=%22Software%20Engineer%22&geoId=100000000&f_TPR=r2592000"
+
+  - name: Example Search 2
+    url: "https://www.linkedin.com/jobs/search-results/?keywords=%22Data%20Scientist%22%20AND%20%22Healthcare%22&geoId=100000000&f_TPR=r2592000"
+
+jobs_ch:
+  - name: Example Search 3
+    url: "https://www.jobs.ch/en/vacancies/?employment-type=5&location=zurich&term=software%20engineer"

@@ -93,17 +93,17 @@ job-radar/
 - [x] Command-line interface
 
 ### v0.2
-- [X] Unit tests
-- [X] Ruff formatting
-- [X] Logging
+- [x] Unit tests
+- [x] Ruff formatting
+- [x] Logging
 
 ### v0.3
-- [X] Console Script
-- [X] GitHub Actions
+- [x] Console Script
+- [x] GitHub Actions
 
 ### v0.4
-- [X] Improve search relevance
-- [X] Add company career-page searches
+- [x] Improve search relevance
+- [x] Add company career-page searches
 - [ ] Test company career-page searches
 
 ### v0.5

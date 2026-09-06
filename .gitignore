@@ -33,3 +33,7 @@ htmlcov/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Personal searches
+config/companies.yaml
+config/searches.yaml
