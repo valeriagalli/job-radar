@@ -114,5 +114,5 @@ job-radar/
 ## Status
 
 Under active development.
-Current milestone: v0.2 
+Current milestone: v0.4
 
