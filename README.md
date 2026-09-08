@@ -4,10 +4,15 @@ A Python CLI application that streamlines the search for software engineering an
 
 ## Motivation
 
-This application streamlines job searches by launching predefined search queries across multiple job platforms.
-Searching for software engineering positions often requires repeating the same searches every day on different platforms (e.g. LinkedIn, jobs.ch, Indeed.ch, etc). 
-Job Radar automates this repetitive workflow while serving as a practical software engineering project to explore modern Python development, testing, CI/CD, and containerization.
-
+A CLI that opens predefined, saved job searches with a single command, instead of
+manually reconstructing the same filtered search each time. Platform-agnostic by
+design: search platforms are just top-level keys in `searches.yaml`, adding a new
+one (e.g. swissdev.ch) requires no code changes. Built primarily as a practical
+project for exploring modern Python packaging, testing, and CI/CD, using my own
+job search as the working example. Configured out of the box with LinkedIn and
+jobs.ch; Indeed.ch was tried initially but dropped, results for my specific search
+terms were weaker there, though that's likely a reflection of my queries rather
+than a general limitation of the platform.
 
 ## Installation (Windows)
 
@@ -33,26 +38,14 @@ Install the project:
 pip install -e ".[dev]"
 ```
 
-## Usage
+Set up your configuration (personal config is gitignored, copy from the examples):
 
-Open a single job search platform:
-
-```bash
-job-radar linkedin
-job-radar jobs_ch
+```powershell
+Copy-Item config\companies.example.yaml config\companies.yaml
+Copy-Item config\searches.example.yaml config\searches.yaml
 ```
 
-Or open all configured searches:
-
-```bash
-job-radar all
-```
-
-
-## Features
-- Supports multiple job platforms (LinkedIn, jobs.ch).
-- Opens curated job searches in the default web browser.
-- Launches platform-specific searches from the command line.
+Then edit `config/companies.yaml` and `config/searches.yaml` with your own target companies and saved searches.
 
 
 ## Project structure
@@ -62,9 +55,9 @@ job-radar/
 │   └── workflows/
 │       └── quality-checks.yml
 ├── config/
-│   ├── companies.yaml
+│   ├── companies.example.yaml
 │   ├── job_profile.yaml
-│   └── searches.yaml
+│   └── searches.example.yaml
 ├── src/
 │   └── job_radar/
 │       ├── __init__.py
@@ -82,6 +75,10 @@ job-radar/
 ├── pyproject.toml
 └── README.md
 ```
+
+Note: `config/companies.yaml` and `config/searches.yaml` hold personal search targets and
+are gitignored. Copy the `.example.yaml` files to get started (see Installation).
+
 
 ## Roadmap
 
@@ -103,16 +100,14 @@ job-radar/
 
 ### v0.4
 - [x] Improve search relevance
-- [x] Add company career-page searches
-- [ ] Test company career-page searches
+- [x] Investigate company-specific career-page search (see Design notes below) — parked
 
 ### v0.5
+- [ ] Company-specific search via Adzuna + client-side filtering
 - [ ] Docker support
-
 
 
 ## Status
 
-Under active development.
-Current milestone: v0.4
-
+Search-URL launcher (LinkedIn, jobs.ch) is feature-complete for personal use.
+Actively building company-specific search via Adzuna.

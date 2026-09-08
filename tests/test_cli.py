@@ -4,7 +4,6 @@ Test module for the command-line interface.
 
 import pytest
 
-import job_radar.config as config
 from job_radar.cli import create_parser, run
 
 
