@@ -1,12 +1,13 @@
 [project]
 name = "job-radar"
-version = "0.1.0"
-description = "CLI tool to streamline healthcare software job searches"
+version = "0.4.0"
+description = "Platform-agnostic CLI for opening predefined job searches"
 readme = "README.md"
 requires-python = ">=3.12"
 
 dependencies = [
-    "PyYAML>=6.0"
+    "PyYAML>=6.0",
+    "python-dotenv",
 ]
 
 [project.optional-dependencies]
