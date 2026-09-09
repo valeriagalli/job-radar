@@ -22,3 +22,6 @@ companies:
   - name: Example Diagnostics Ltd
     url: https://www.example-diagnostics.com/jobs
     priority: low
+
+deny_companies:
+  - "Example Staffing Agency"
